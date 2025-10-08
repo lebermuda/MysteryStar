@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Une page HTML vierge</title>
-        <meta charset="utf-8" />
-    </head>
-    <body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Qui est sur l'image ?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mystery Star</h1>
         
-    </body>
+        <div class="image-container">
+            <img src="data/image.png" alt="Image cachée" class="hidden-image">
+            <div class="overlay"></div>
+        </div>
+
+        <input type="text" id="reponse" placeholder="Entrez le nom...">
+        <button onclick="verifierReponse()">Vérifier</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
